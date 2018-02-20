@@ -1,0 +1,17 @@
+<%- |
+  $ascii,
+| -%>
+
+------------------------------------------------------------
+<%= $ascii %>
+------------------------------------------------------------
+    Welcome to <%= $facts['networking']['fqdn'] %>
+    OS: <%= $facts['os']['name'] %> <%= $facts['os']['release']['full'] %>
+    OS Family: <%= $facts['os']['family'] %>
+    Architecture: <%= $facts['os']['architecture'] %>
+    Kernel Version: <%= $facts['kernelversion'] %>
+    IP: <%= $facts['networking']['ip'] %>
+    RAM: <%= $facts['memory']['system']['total'] %>
+------------------------------------------------------------
+    This system is managed by Puppet version <%= $facts['puppetversion'] %>
+------------------------------------------------------------
