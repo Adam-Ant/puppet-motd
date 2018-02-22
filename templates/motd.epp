@@ -5,13 +5,13 @@
 ------------------------------------------------------------
 <%= $ascii %>
 ------------------------------------------------------------
-    Welcome to <%= $facts['networking']['fqdn'] %>
-    OS: <%= $facts['os']['name'] %> <%= $facts['os']['release']['full'] %>
-    OS Family: <%= $facts['os']['family'] %>
-    Architecture: <%= $facts['os']['architecture'] %>
+    Welcome to <%= $facts['fqdn'] %>
+    OS: <%= $facts['operatingsystem'] %> <%= $facts['operatingsystemrelease'] %>
+    OS Family: <%= $facts['osfamily'] %>
+    Architecture: <%= $facts['architecture'] %>
     Kernel Version: <%= $facts['kernelversion'] %>
-    IP: <%= $facts['networking']['ip'] %>
-    RAM: <%= $facts['memory']['system']['total'] %>
+    IP: <%= $facts['ipaddress'] %>
+    RAM: <%= $facts['memorysize'] %>
 ------------------------------------------------------------
     This system is managed by Puppet version <%= $facts['puppetversion'] %>
 ------------------------------------------------------------

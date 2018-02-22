@@ -22,7 +22,7 @@
 #
 class motd {
   $motd_hash = {
-    'ascii'       => generate('/bin/sh', '-c', "/usr/bin/figlet -cw 60 ${$facts['networking']['hostname']}"),
+    'ascii'       => generate('/bin/sh', '-c', "/usr/bin/figlet -cw 60 ${$facts['hostname']}"),
   }
 
   file { '/etc/motd':
